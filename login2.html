@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login 3D</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at center, #0f0f0f, #1a1a1a);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1200px;
+    }
+
+    .glass-wrapper {
+      display: flex;
+      gap: 40px;
+      transform: rotateY(-10deg);
+    }
+
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      padding: 30px 40px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      min-width: 300px;
+      color: white;
+    }
+
+    .panel-left .menu-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 10px 16px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+
+    .panel-left .menu-item:hover {
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .menu-item i {
+      color: #00bfff;
+      font-size: 18px;
+    }
+
+    .menu-item span {
+      font-weight: 500;
+      color: #f0f0f0;
+    }
+
+    .panel-right h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .panel-right input[type="email"],
+    .panel-right input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    .panel-right input::placeholder {
+      color: #ccc;
+    }
+
+    .panel-right button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #00bfff;
+      color: white;
+      font-weight: bold;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .panel-right button:hover {
+      background-color: #009ad6;
+    }
+
+    .panel-right .options {
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .panel-right a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    .panel-right a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="glass-wrapper">
+    <div class="glass-panel panel-left">
+      <div class="menu-item"><i class="fas fa-user"></i><span>Personal Info</span></div>
+      <div class="menu-item"><i class="fas fa-envelope"></i><span>Contact</span></div>
+      <div class="menu-item"><i class="fas fa-bell"></i><span>Notifications</span></div>
+      <div class="menu-item"><i class="fas fa-shield-alt"></i><span>Privacy</span></div>
+      <div class="menu-item"><i class="fas fa-credit-card"></i><span>Payments</span></div>
+      <div class="menu-item"><i class="fas fa-lock"></i><span>Security</span></div>
+    </div>
+    
+    <div class="glass-panel panel-right">
+      <h2>Iniciar sesión</h2>
+      <input type="email" placeholder="Correo electrónico" />
+      <input type="password" placeholder="Contraseña" />
+      <label><input type="checkbox"> Recuérdame</label>
+      <button>Login</button>
+      <div class="options">
+        <a href="#">¿Olvidaste tu contraseña?</a><br>
+        ¿No tienes cuenta? <a href="#">Crear una</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
