@@ -143,7 +143,7 @@ include('conexion.php');
       <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="definicionesvanti.php">Quienes Somos</a></li>
         <li class="nav-item"><a class="nav-link" href="catalogo_servicios.php">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link" href="catalogo_servicios.php">Capacitaciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="consultoria_negocio.php">Consultorias</a></li>
         <li class="nav-item"><a class="nav-link" href="productos.php">Productos</a></li>
         <li class="nav-item"><a class="nav-link" href="contactos.php">Contacto</a></li>
       </ul>
