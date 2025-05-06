@@ -1,5 +1,5 @@
-<?php include 'includes/header.php'; ?>
-<?php include 'conexion.php'; // Asegúrate de tener la conexión a la base de datos ?>
+<?php include_once 'includes/header.php'; ?>
+<?php include_once 'conexion.php'; ?>
 
 <style>
   .main-container {
@@ -72,28 +72,16 @@
     color: #007bff;
     text-decoration: none;
   }
-
-  .btn-ver-mas {
-    display: block;
-    width: fit-content;
-    margin: 30px auto 0 auto;
-    padding: 10px 20px;
-    background-color: #404040;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-  }
 </style>
 
 <div class="main-container">
   <?php include('includes/sidebar.php'); ?>
 
   <section class="content">
-    <h2>Catálogo de Servicios</h2>
+    <h2>Todos los Servicios</h2>
     <div class="card-grid mt-4">
       <?php
-        $query = "SELECT id, titulo, descripcion, imagen_url FROM servicios ORDER BY fecha_creacion DESC LIMIT 8";
+        $query = "SELECT id, titulo, descripcion, imagen_url FROM servicios ORDER BY fecha_creacion DESC";
         $result = mysqli_query($conn, $query);
 
         if (mysqli_num_rows($result) > 0) {
@@ -111,9 +99,6 @@
         }
       ?>
     </div>
-
-    <!-- Botón Ver Más -->
-    <a href="todos_los_servicios.php" class="btn-ver-mas">Ver más</a>
   </section>
 </div>
 

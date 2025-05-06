@@ -19,7 +19,7 @@ include('conexion.php');
     <?php include('includes/sidebar.php'); ?>
 
     <div class="col-md-9">
-      <h3 class="mb-4">Nuestros Productos</h3>
+      <h3 class="mb-4">Desarrollamos en:</h3>
       <div class="row" id="productosContainer"></div>
 
       <div class="text-center mt-3">

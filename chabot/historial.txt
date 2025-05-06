@@ -1,0 +1,3 @@
+<div class='user'><b>Tú:</b> ver modulos</div>
+<div class='bot'><b>Bot:</b> <i class='fas fa-puzzle-piece'></i> <b>Gestion de sistemas</b>: Gestion de sistemas<br><a href='modulos.php?id=1' target='_blank'>Ver más</a><hr><i class='fas fa-puzzle-piece'></i> <b>Consultoria de negocio</b>: Consultoria de negocio<br><a href='modulos.php?id=2' target='_blank'>Ver más</a></div>
+
